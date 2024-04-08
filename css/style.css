@@ -1,0 +1,43 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+}
+
+main, 
+header{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+article{
+    background-color: rgb(197, 135, 255);
+    border: 3px solid blue;
+    padding: 1rem;
+    width: 150px;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.flexbox{
+    display: flex;
+    background-color: rgb(204, 255, 149);
+    height: 500px;
+}
+
+
+ /* ? hai un parent DIRETTO a cui e' stata applicata la regola display:flex? */
+        /* ! SI ===> sono un flex-item */
+        /* todo NO ===> NON SONO un flex-item */
