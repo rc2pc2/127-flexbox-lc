@@ -5,36 +5,37 @@
     box-sizing: border-box;
 }
 
-header h1{
-    text-align: center;
-}
 
-main, 
+
 header{
-    width: 80%;
-    margin: 2rem auto;
-}
-
-article{
-    background-color: rgb(197, 135, 255);
-    border: 3px solid blue;
-    padding: 1rem;
-    width: 150px;
-    /* flex-grow: 1; */
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-
-.flex-centered{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5rem 0;
+    background-color: red;
 }
 
-section.flexbox{
+header > * {
+    /* border: 2px solid black; */
+}
+
+h1{
+    font-size: 4.5rem;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+ul{
     display: flex;
-    background-color: rgb(204, 255, 149);
-    height: 500px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul>li{
+    padding: 0 1rem;
 }
 
 
